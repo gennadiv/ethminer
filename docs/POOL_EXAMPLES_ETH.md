@@ -82,7 +82,7 @@ Some examples:
 | :---: |  :---: |
 |%25 | % |
 |%26 | & |
-|%2e | . |
+|%%2e | . |
 |%2f | / |
 |%3a | : |
 |%3f | ? |
@@ -219,14 +219,14 @@ SSL connection:
 ### miningpoolhub.com
 
 ```
--P stratum2+tcp://USERNAME%2eWORKERNAME:WORKERPWD@asia.ethash-hub.miningpoolhub.com:20535
--P stratum2+tcp://USERNAME%2eWORKERNAME:WORKERPWD@europe.ethash-hub.miningpoolhub.com:20535
--P stratum2+tcp://USERNAME%2eWORKERNAME:WORKERPWD@us-east.ethash-hub.miningpoolhub.com:20535
+-P stratum2+tcp://USERNAME%%2eWORKERNAME:WORKERPWD@asia.ethash-hub.miningpoolhub.com:20535
+-P stratum2+tcp://USERNAME%%2eWORKERNAME:WORKERPWD@europe.ethash-hub.miningpoolhub.com:20535
+-P stratum2+tcp://USERNAME%%2eWORKERNAME:WORKERPWD@us-east.ethash-hub.miningpoolhub.com:20535
 ```
 
 HINTS:
 
-* miningpoolhub.com needs username.workername in the internal login process. Use "%2e" to join them into one parameter.
+* miningpoolhub.com needs username.workername in the internal login process. Use "%%2e" to join them into one parameter.
 * It seems the password is not being verified by the pool so you can use a plain `x` as `WORKERPWD`.
 
 ### nanopool.org
